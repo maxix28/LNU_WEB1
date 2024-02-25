@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Деталі міста Жовква</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Підключення зовнішнього таблиці стилів -->
+    <style>
+        img {
+            border: 1px solid #ddd;
+            border-radius: 20%;
+            padding: 5px;
+            max-width: 100%; /* Максимальна ширина зображень - 100% від батьківського контейнера */
+            height: auto; /* Автоматичне збереження пропорцій */
+            max-height: 300px; /* Максимальна висота зображень */
+        }
+        body {
+            background-color: linen;
+            font-size: 16px; /* Загальний розмір шрифту */
+            line-height: 1.6; /* Висота рядка */
+            margin: 0; /* Відсутність зовнішніх відступів */
+            padding: 0; /* Відсутність внутрішніх відступів */
+            font-family: Arial, sans-serif; /* Шрифт */
+        }
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+            font-size: 2em; /* Розмір заголовків */
+            margin-top: 0; /* Відсутність зовнішніх відступів зверху */
+        }
+        .container {
+            width: 90%; /* Ширина контейнера */
+            margin: auto; /* Автоматичне центрування контейнера */
+        }
+        .navigation ul {
+            list-style-type:none ;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+        .navigation li {
+            float: left;
+        }
+        .navigation a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navigation a:hover {
+            background-color: #111;
+        }
+        .main-content {
+            padding: 20px; /* Внутрішні відступи для головного вмісту */
+        }
+        section {
+            margin-bottom: 20px; /* Зовнішні відступи для розділів */
+        }
+        table, th, td {
+            border: 1px solid;
+            border-collapse: collapse; /* Злиття рамок таблиці */
+            width: 100%; /* Ширина таблиці */
+        }
+        th, td {
+            padding: 10px; /* Внутрішні відступи для комірок */
+            text-align: left; /* Вирівнювання тексту в комірках */
+        }
+        tr:hover {
+            background-color: rgba(255, 229, 80, 0.486); /* Колір фону рядка при наведенні */
+        }
+        .footer {
+            background-color: #333333; /* Колір фону підвалу */
+            color: white; /* Колір тексту підвалу */
+            text-align: center; /* Вирівнювання тексту по центру */
+            padding: 20px 0; /* Внутрішні відступи підвалу */
+        }
+        /* Стилі для розділу з визначними місцями */
+        .attractions-container {
+            background-color: #f9f9f9; /* Колір фону контейнера */
+            padding: 20px; /* Внутрішні відступи для контейнера */
+            border-radius: 10px; /* Закруглені кути контейнера */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тінь контейнера */
+        }
+        .attractions-container h2 {
+            color: #333; /* Колір заголовка */
+            margin-top: 0; /* Відсутність зовнішніх відступів зверху */
+        }
+        .attractions-container ol {
+            padding-left: 20px; /* Внутрішні відступи для маркованого списку */
+        }
+        .attractions-container li {
+            margin-bottom: 10px; /* Зовнішні відступи для елементів списку */
+        }
+        .attractions-container a {
+            color: #0066cc; /* Колір посилань */
+            text-decoration: none; /* Відсутність підкреслення для посилань */
+        }
+        .attractions-container a:hover {
+            text-decoration: underline; /* Підкреслення посилань при наведенні */
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Деталі міста Жовква</h1>
+</header>
+
+<div class="container">
+    <div class="navigation">
+        <ul>
+            <li><a href="index.html" class="nav-link">Про Жовкву</a></li>
+            <li><a href="details.html" class="nav-link">Деталі</a></li>
+            <li><a href="excursion.html" class="nav-link">Екскурсії</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <main>
+            <section id="attractions">
+                <div class="attractions-container">
+                    <h2>Визначні місця</h2>
+                    <ol>
+                        <li><a href="https://lvivgallery.org.ua/museums/muzey-zapovidnyk-zhovkivskyy-zamok" target="_blank">Жовківський замок</a></li>
+                        <li><a href="https://zabytki.in.ua/uk/1051/zvirinetska-brama" target="_blank">Звіринецька брама</a></li>
+                        <li><a href="https://tamtour.com.ua/kostel-sviatoho-lavrentiia" target="_blank">Костел</a></li>
+                        <li><a href="https://zhovkva-tour.info/zhovkva/ratusha" target="_blank">Ратуша</a></li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="gallery">
+                <h2>Галерея</h2>
+                <img src="images/zamok.jpeg" alt="Жовківський замок">
+                <img src="images/kostel.jpeg" alt="Бернардинський костел">
+                <img src="images/cerkva.jpeg" alt="Костел святого Варфоломія">
+                <img src="images/zver.jpg" alt="Ратуша">
+            </section>
+            
+            <!-- Розділ з таблицями -->
+            <section id="tables">
+                <h2>Статистика</h2>
+                <table>
+                    <caption>Популяція міста Жовква за роками</caption>
+                    <tr>
+                        <th>Рік</th>
+                        <th>Популяція</th>
+                    </tr>
+                    <tr>
+                        <td>2000</td>
+                        <td>50,000</td>
+                    </tr>
+                    <tr>
+                        <td>2010</td>
+                        <td>55,000</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>60,000</td>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <caption>Таблиця вартості житла в місті</caption>
+                    <tr>
+                        <th>Тип житла</th>
+                        <th>Середня вартість</th>
+                    </tr>
+                    <tr>
+                        <td>Квартира</td>
+                        <td>800 USD за м²</td>
+                    </tr>
+                    <tr>
+                        <td>Приватний будинок</td>
+                        <td>1000 USD за м²</td>
+                    </tr>
+                </table>
+            </section>
+            
+            <!-- Розділ з вбудовою картою Google -->
+            <section id="frames">
+                <h2>Гугл карти</h2>
+                <div style="text-align: center;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2616.368863363894!2d23.99012461598569!3d50.04186697942055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473a3214825d9971%3A0x73314192f35b4389!2z0J3QtdCy0LXRgNCwLCDQndCw0LXQudGB0LrQsNGPLCAxODAwMA!5e0!3m2!1suk!2sua!4v1645785411974!5m2!1suk!2sua" width="90%" height="450" style="border:0; display: block; margin: auto;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
+
+            <!-- Підвал сторінки -->
+            <div class="footer">
+                <footer>
+                    <p>&copy; 2024 Павлів Максим ФЕІ-21.</p>
+                </footer>
+            </div>
+        </main>
+    </div>
+</div>
+
+</body>
+
+</html>

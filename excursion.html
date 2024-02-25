@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запис на екскурсії</title>
+    <style>
+        img {
+    border: 1px solid #ddd;
+    border-radius: 20%;
+    padding: 5px;
+    width: 150px;
+  }
+        body {
+          background-color: linen;
+        }
+        
+        h1 {
+          color: maroon;
+          margin-left: 40px;
+        }
+
+
+
+        ul {
+  list-style-type:none ;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #cecbcb;
+}
+
+li {
+  float: left;
+}
+ol a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+
+.main-content {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#excursion {
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.footer {
+            background-color: #333333; /* Колір фону підвалу */
+            color: white; /* Колір тексту підвалу */
+            text-align: center; /* Вирівнювання тексту по центру */
+            padding: 20px 0; /* Внутрішні відступи підвалу */
+        }
+
+        </style>
+</head>
+<body>
+
+<header>
+    <h1>Екскурсії</h1>
+</header>
+
+<div class="container">
+    <div class="navigation">
+        <ul>
+            <li> <a href="index.html" class="nav-link">Про Жовкву</a>
+                <li> <a href="details.html" class="nav-link">Деталі</a>
+                    <li> <a href="excursion.html" class="nav-link">Екскурсії</a>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <main>
+            <section id="excursion">
+                <h2>Запис на екскурсії</h2>
+                <p>Ви можете записати на екскурсії </p>
+                <form >
+                    <label for="fname">Ваше ім'я:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Номер телефону:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <input type="submit" value="Підтвердити">
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <p>&copy; 2024 Павлів Максим ФЕІ-21.</p>
+        </footer>
+    </div>
+</div>
+
+</body>
+</html>
